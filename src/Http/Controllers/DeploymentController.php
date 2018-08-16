@@ -45,9 +45,8 @@ class DeploymentController extends Controller
          * 判断是否为推送事件
          */
         if ($enent === config('deployment.evnents.push')) {
-            $user = config('deployment.php.user');
             $ref = str_after($request->get('ref'), 'refs/heads/');
-            $command = sprintf('sudo -Hu %s cd %s && git pull origin %s:%s', $user, $target, $ref, $ref);
+            $command = sprintf('cd %s && git pull origin %s:%s', $target, $ref, $ref);
             return shell_exec($command);
         }
     }

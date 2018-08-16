@@ -14,10 +14,6 @@ return [
     'uri' => 'deployment',
     'enable' => true,
     'token' => env('DEPLOYMENT_TOKEN', false),
-    'php' => [
-        'user' => 'www',
-        'group' => 'wwww'
-    ],
     'evnents' => [
         'push' => 'Push Hook',
         'tag' => 'Tag Push Hook',
