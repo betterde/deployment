@@ -1,0 +1,31 @@
+{
+    "name": "betterde/deployment",
+    "description": "Automatic deployment for webhook",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "George",
+            "email": "george@betterde.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "laravel/framework": "5.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Betterde\\Deployment\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Betterde\\Deployment\\Providers\\DeploymentServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
