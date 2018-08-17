@@ -15,15 +15,8 @@ use Illuminate\Http\Request;
 class DeploymentController extends Controller
 {
     /**
-     * Date: 2018/8/16
-     * @author George
-     */
-    public function history()
-    {
-
-    }
-
-    /**
+     * Hook handler
+     *
      * Date: 2018/8/16
      * @author George
      * @param Request $request
